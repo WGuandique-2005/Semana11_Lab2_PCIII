@@ -7,6 +7,7 @@
 
 ### Estudiante:
 **William Guandique - SMSS076423**
+
 **Briseily Solorzano - SMSS030723**
 
 ### Descripción de la Actividad:
