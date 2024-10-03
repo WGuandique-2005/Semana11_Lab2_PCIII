@@ -7,6 +7,7 @@
 
 ### Estudiante:
 **William Guandique - SMSS076423**
+**Briseily Solorzano - SMSS030723**
 
 ### Descripción de la Actividad:
 Este repositorio contiene la solución para la Actividad Sumativa de Laboratorio 2 correspondiente al segundo cómputo, semana 11.
