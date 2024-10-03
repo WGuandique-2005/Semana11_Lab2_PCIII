@@ -34,3 +34,15 @@ plt.ylabel('Media de HP')
 
 # Mostrar el gráfico
 plt.show()
+
+"""
+* Analisis:
+El gráfico muestra que los tipos de Pokémon "Dragon" y "Fairy" tienen la mayor media de HP, 
+con valores cercanos a 80 y 75, respectivamente. 
+Esto sugiere que estos tipos de Pokémon pueden ser más resistentes 
+y tener una mayor capacidad de supervivencia en batalla.
+
+Por otro lado, los tipos de Pokémon "Bug" y "Electric" tienen la menor media de HP, 
+con valores cercanos a 40 y 45, respectivamente. 
+Esto podría indicar que estos tipos de Pokémon son más débiles y vulnerables en batalla.
+"""
