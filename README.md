@@ -23,4 +23,4 @@ Este repositorio contiene la solución para la Actividad Sumativa de Laboratorio
 ### Instrucciones para Ejecutar el Proyecto:
 1. Clonar el repositorio:
    ```bash
-   https://github.com/tu_usuario/nombre_repositorio.git](https://github.com/WGuandique-2005/Semana11_Lab2_PCIII.git
+   https://github.com/WGuandique-2005/Semana11_Lab2_PCIII.git
