@@ -1,3 +1,12 @@
+"""
+____________________________________________________________________________
+Haciendo uso de la página de Kaggle, seleccionar tres diferentes datasets.
+A). Un gráfico de barras
+Enlace al dataset utilizado: 
+https://www.kaggle.com/datasets/davinascimento/data-to-learn-data-science
+____________________________________________________________________________
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -7,7 +16,7 @@ df = pd.read_csv('data.csv')
 
 # Creamos el gráfico de barras
 plt.figure(figsize=(10,6))
-plt.bar(df['Duration'], df['Calories'], color='b')
+plt.bar(df['Duration'], df['Calories'], color=['Pink'], width=3)
 
 # Añadimos las etiquetas y el título
 plt.xlabel('Duracion en minutos', fontsize=12)
