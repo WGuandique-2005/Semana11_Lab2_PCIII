@@ -9,7 +9,7 @@ import pandas as pd  # para manejar datos en forma de tablas
 import matplotlib.pyplot as plt  # para crear gráficos
 
 # Cargar el dataset de Pokémon desde un archivo CSV llamado "Pokemon.csv"
-ds = pd.read_csv('Pokemon.csv')
+ds = pd.read_csv('dataset/Pokemon.csv')
 
 # Agrupar los datos por la columna "type1" (tipo de Pokémon) y calcular la media de la columna "hp" (puntos de vida)
 hp_by_type = ds.groupby('type1')['hp'].mean().reset_index()

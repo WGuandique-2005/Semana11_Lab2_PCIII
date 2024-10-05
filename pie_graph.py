@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Cargar el dataset de NetFlix.csv
-netflix_data = pd.read_csv('NetFlix.csv')
+netflix_data = pd.read_csv('dataset/NetFlix.csv')
 
 # Contar la frecuencia de cada tipo (movie o TV show)
 type_counts = netflix_data['type'].value_counts()

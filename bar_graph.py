@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Cargar el dataset
-ds = pd.read_csv('spotify_tracks.csv')
+ds = pd.read_csv('dataset/spotify_tracks.csv')
 
 # Calcular la duración promedio por género en ms
 duracion_generos = ds.groupby('genre')['duration_ms'].mean().reset_index()
