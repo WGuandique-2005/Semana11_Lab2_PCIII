@@ -9,3 +9,10 @@ __________________________________________________________________________
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Cargar el dataset de NetFlix.csv
+datos = pd.read_csv('dataset/Leetcode_Questions.csv')
+
+# Contar la frecuencia de cada tipo (movie o TV show)
+Difficulty_counts = datos['Difficulty'].value_counts()
+
+
