@@ -9,5 +9,11 @@ ______________________________________________________________________________
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Cargar el dataset de China vs Japon
+# Cargamos el dataset de China vs Japon
 paises = pd.read_csv('dataset/Big_Japan_vs_China_Technology.csv')
+
+
+# Contamos la frecuencia de cada tipo, en este caso los paises de china y japon, con los sectores tecnologicos
+type_counts = paises['type'].value_counts()
+
+
