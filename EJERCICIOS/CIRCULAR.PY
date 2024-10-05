@@ -28,3 +28,11 @@ plt.pie(Difficulty_counts, labels = Difficulty_counts.index, autopct='%1.1f%%',
 plt.title('Dificultad de preguntas de Leetcode', fontsize=18)
 plt.axis('equal')  # Garantizamos que el gráfico sea circular
 plt.show()
+
+"""
+________________________________________________________________________________
+Generamos un gráfico de pastel en el cual se visualizala distribución de las 
+preguntas de Leetcode por nivel de dificultad (Fácil, Medio, Difícil). El dataset 
+incluye una columna llamada Difficulty,que contiene el nivel de cada pregunta.
+_________________________________________________________________________________
+"""
