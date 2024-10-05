@@ -1,7 +1,7 @@
 """
 ____________________________________________________________________________
 Haciendo uso de la página de Kaggle, seleccionar tres diferentes datasets.
-A). Un gráfico de barras
+    A). Un gráfico de barras
 Enlace al dataset utilizado: 
 https://www.kaggle.com/datasets/davinascimento/data-to-learn-data-science
 ____________________________________________________________________________
