@@ -48,3 +48,13 @@ plt.legend()
 # Ajustamos el diseño y mostramos el gráfico
 plt.tight_layout()
 plt.show()
+
+"""
+_________________________________________________________________________________
+Creamos un gráfico de líneas que compara la frecuencia de los sectores 
+tecnológicos en China VS Japón. Utiliza un dataset que contiene información 
+sobre diversos sectores tecnológicos, agrupando los datos por país y 
+contando cuántas veces aparece cada sector. En el gráfico, cada línea 
+representa un país: la línea rosa corresponde a China y la línea verde a Japón.
+_________________________________________________________________________________
+"""

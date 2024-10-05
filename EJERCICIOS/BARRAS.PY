@@ -28,7 +28,7 @@ plt.show()
 
 """
 _______________________________________________________________________
-genera un gráfico de barras que representa la relación entre la
+Genera un gráfico de barras que representa la relación entre la
 duración de la actividad física y las calorías quemadas. Utilizando 
 un dataset que contiene información sobre diferentes actividades, 
 cada barra del gráfico indica cuántas calorías se queman en función 
