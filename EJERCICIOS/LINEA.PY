@@ -28,11 +28,11 @@ plt.figure(figsize=(12, 6))
 
 # Línea para China
 plt.plot(china_tech_by_sector['Tech Sector'], china_tech_by_sector['Count'], 
-         marker='o', color='red', linewidth=2, label='China')
+         marker='o', color='pink', linewidth=2, label='China')
 
 # Línea para Japón
 plt.plot(japan_tech_by_sector['Tech Sector'], japan_tech_by_sector['Count'], 
-         marker='o', color='blue', linewidth=2, label='Japón')
+         marker='o', color='green', linewidth=2, label='Japón')
 
 # Añadimos el título y las etiquetas a los ejes
 plt.title('Frecuencia de Sectores Tecnológicos: China vs Japón', fontsize=18)
