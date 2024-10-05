@@ -25,3 +25,13 @@ plt.title('Calorías quemadas según la duración de la actividad', fontsize=16)
 # Mostramos el gráfico de barras
 plt.grid(True)
 plt.show()
+
+"""
+_______________________________________________________________________
+genera un gráfico de barras que representa la relación entre la
+duración de la actividad física y las calorías quemadas. Utilizando 
+un dataset que contiene información sobre diferentes actividades, 
+cada barra del gráfico indica cuántas calorías se queman en función 
+de la duración de la actividad, expresada en minutos. 
+_______________________________________________________________________
+"""
