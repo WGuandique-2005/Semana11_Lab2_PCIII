@@ -38,12 +38,10 @@ plt.plot(japan_tech_by_sector['Tech Sector'], japan_tech_by_sector['Count'],
 plt.title('Frecuencia de Sectores Tecnológicos: China vs Japón', fontsize=18)
 plt.xlabel('Sector Tecnológico', fontsize=14)
 plt.ylabel('Frecuencia', fontsize=14)
-
-# Añadimos las etiquetas del eje x con una rotación de 45 grados para mejor visibilidad
 plt.xticks(rotation=45)
 
 # Añadimos una cuadrícula y la leyenda
-plt.grid(color='gray', linestyle='--')
+plt.grid(color='gray')
 plt.legend()
 
 # Ajustamos el diseño y mostramos el gráfico
