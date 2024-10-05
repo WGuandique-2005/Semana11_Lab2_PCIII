@@ -21,7 +21,7 @@ plt.figure(figsize=(10, 6))
 # Crear un gráfico de líneas que muestra la media de HP por tipo de Pokémon
 plt.plot(hp_by_type['type1'], hp_by_type['hp'], 
         marker='o',  # agregar marcadores circulares en cada punto
-        color='blue',  # color del gráfico
+        color='yellow',  # color del gráfico
         linewidth=2)  # grosor de la línea
 
 plt.title('Media de HP por tipo de Pokémon (ordenados por HP descendente)', fontsize=18)
@@ -29,7 +29,7 @@ plt.xlabel('Tipo de Pokémon')
 # Agregar etiquetas para cada punto en el eje x, rotadas 45 grados para que sean más legibles
 plt.xticks(range(len(hp_by_type)), hp_by_type['type1'], rotation=45)
 # Agregar un grid al gráfico para facilitar la lectura
-plt.grid(True)
+plt.grid(color='blue', linestyle='--', linewidth=0.5)
 plt.ylabel('Media de HP')
 
 # Mostrar el gráfico
