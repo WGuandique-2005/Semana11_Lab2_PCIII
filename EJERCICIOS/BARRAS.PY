@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Cargamos los datos del DataFrame
-df = pd.read_csv('data.csv')
+df = pd.read_csv('dataset/data.csv')
 
 # Creamos el gráfico de barras
 plt.figure(figsize=(10,6))
