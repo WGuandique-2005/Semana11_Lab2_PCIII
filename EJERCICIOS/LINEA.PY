@@ -3,6 +3,7 @@ _____________________________________________________________________________
  Haciendo uso de la página de Kaggle, seleccionar tres diferentes datasets.
     B) Un gráfico de lineas
 Enlace al dataset utilizado: 
+https://www.kaggle.com/datasets/waqi786/china-vs-japan/data
 ______________________________________________________________________________
 """
 import pandas as pd
