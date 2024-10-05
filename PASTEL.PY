@@ -9,3 +9,5 @@ ______________________________________________________________________________
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Cargar el dataset de China vs Japon
+paises = pd.read_csv('dataset/Big_Japan_vs_China_Technology.csv')
