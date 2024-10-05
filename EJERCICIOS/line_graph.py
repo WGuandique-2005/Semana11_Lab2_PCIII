@@ -1,48 +1,60 @@
 """
-* Haciendo uso de la página de Kaggle, seleccionar tres diferentes datasets.
-! b. Un gráfico de líneas
-Enlace al dataset utilizado: https://www.kaggle.com/datasets/jaidalmotra/pokemon-dataset
+_____________________________________________________________________________
+ Haciendo uso de la página de Kaggle, seleccionar tres diferentes datasets.
+    B) Un gráfico de lineas
+Enlace al dataset utilizado: 
+https://www.kaggle.com/datasets/waqi786/china-vs-japan/data
+______________________________________________________________________________
 """
+import pandas as pd
+import matplotlib.pyplot as plt
 
-# Importar las librerías necesarias
-import pandas as pd  # para manejar datos en forma de tablas
-import matplotlib.pyplot as plt  # para crear gráficos
+# Cargamos el dataset de China VS Japón desde un archivo CSV
+paises = pd.read_csv('dataset/Big_Japan_vs_China_Technology.csv')
 
-# Cargar el dataset de Pokémon desde un archivo CSV llamado "Pokemon.csv"
-ds = pd.read_csv('dataset/Pokemon.csv')
+# Filtramos el dataset para China y Japón por separado
+china_data = paises[paises['Country'] == 'China']
+japan_data = paises[paises['Country'] == 'Japan']
 
-# Agrupar los datos por la columna "type1" (tipo de Pokémon) y calcular la media de la columna "hp" (puntos de vida)
-hp_by_type = ds.groupby('type1')['hp'].mean().reset_index()
-# Ordenar los resultados en orden descendente según la media de HP
-hp_by_type = hp_by_type.sort_values('hp', ascending=False)
+# Agrupamos los datos por el sector tecnológico y contamos las ocurrencias para cada país
+china_tech_by_sector = china_data.groupby('Tech Sector')['Tech Sector'].count().reset_index(name='Count')
+japan_tech_by_sector = japan_data.groupby('Tech Sector')['Tech Sector'].count().reset_index(name='Count')
 
-# Crear una figura para el gráfico con un tamaño de 10x6 pulgadas
-plt.figure(figsize=(10, 6))
-# Crear un gráfico de líneas que muestra la media de HP por tipo de Pokémon
-plt.plot(hp_by_type['type1'], hp_by_type['hp'], 
-        marker='o',  # agregar marcadores circulares en cada punto
-        color='yellow',  # color del gráfico
-        linewidth=2)  # grosor de la línea
+# Ordenamos los sectores por frecuencia para tener consistencia
+china_tech_by_sector = china_tech_by_sector.sort_values('Tech Sector')
+japan_tech_by_sector = japan_tech_by_sector.sort_values('Tech Sector')
 
-plt.title('Media de HP por tipo de Pokémon (ordenados por HP descendente)', fontsize=18)
-plt.xlabel('Tipo de Pokémon')
-# Agregar etiquetas para cada punto en el eje x, rotadas 45 grados para que sean más legibles
-plt.xticks(range(len(hp_by_type)), hp_by_type['type1'], rotation=45)
-# Agregar un grid al gráfico para facilitar la lectura
-plt.grid(color='blue', linestyle='--', linewidth=0.5)
-plt.ylabel('Media de HP')
+# Creamos una figura para el gráfico de líneas 
+plt.figure(figsize=(12, 6))
 
-# Mostrar el gráfico
+# Línea para China
+plt.plot(china_tech_by_sector['Tech Sector'], china_tech_by_sector['Count'], 
+         marker='o', color='pink', linewidth=2, label='China')
+
+# Línea para Japón
+plt.plot(japan_tech_by_sector['Tech Sector'], japan_tech_by_sector['Count'], 
+         marker='o', color='green', linewidth=2, label='Japón')
+
+# Añadimos el título y las etiquetas a los ejes
+plt.title('Frecuencia de Sectores Tecnológicos: China vs Japón', fontsize=18)
+plt.xlabel('Sector Tecnológico', fontsize=14)
+plt.ylabel('Frecuencia', fontsize=14)
+plt.xticks(rotation=45)
+
+# Añadimos una cuadrícula y la leyenda
+plt.grid(color='gray')
+plt.legend()
+
+# Ajustamos el diseño y mostramos el gráfico
+plt.tight_layout()
 plt.show()
 
 """
-* Analisis:
-El gráfico muestra que los tipos de Pokémon "Dragon" y "Fairy" tienen la mayor media de HP, 
-con valores cercanos a 80 y 75, respectivamente. 
-Esto sugiere que estos tipos de Pokémon pueden ser más resistentes 
-y tener una mayor capacidad de supervivencia en batalla.
-
-Por otro lado, los tipos de Pokémon "Bug" y "Electric" tienen la menor media de HP, 
-con valores cercanos a 40 y 45, respectivamente. 
-Esto podría indicar que estos tipos de Pokémon son más débiles y vulnerables en batalla.
+_________________________________________________________________________________
+Creamos un gráfico de líneas que compara la frecuencia de los sectores 
+tecnológicos en China VS Japón. Utiliza un dataset que contiene información 
+sobre diversos sectores tecnológicos, agrupando los datos por país y 
+contando cuántas veces aparece cada sector. En el gráfico, cada línea 
+representa un país: la línea rosa corresponde a China y la línea verde a Japón.
+_________________________________________________________________________________
 """
