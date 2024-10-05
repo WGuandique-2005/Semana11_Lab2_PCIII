@@ -6,3 +6,6 @@ Enlace al dataset utilizado:
 ______________________________________________________________________________
 """
 
+import pandas as pd
+import matplotlib.pyplot as plt
+
